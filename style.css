@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    height: 100vh;
+    width: 60%;
+    display: grid;
+    grid-template-rows: 25% auto ;
+}
+
+.photos-container{
+    display: grid;
+    grid-template-rows: 30% auto;
+} 
+
+.photos-container .group-1{
+    background-color: rebeccapurple;
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+
+.photos-container .group-1 .item-1{
+    background-color: red;
+    background-image: url("./assets/image-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photos-container .group-1 .item-2{
+    background-image: url("./assets/image-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.photos-container .group-2{
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 70% auto;
+    background-image: url("./assets/image-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photos-container .group-2 .sub-1{
+    background-color: green;
+    display: grid;
+    grid-template-rows:55% auto;
+}
+
+.photos-container .group-2 .sub-1 .sub-1-1{
+    /* background-color: red; */
+    background-image: url("./assets/image-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photos-container .group-2 .sub-1 .sub-1-2{
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.photos-container .group-2 .sub-1 .sub-1-2 .sub-1-2-1{
+    background-image: url("./assets/image-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photos-container .group-2 .sub-1 .sub-1-2 .sub-1-2-2{
+    background-image: url("./assets/image-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
